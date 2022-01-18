@@ -1,0 +1,9 @@
+type Player @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  sport: String
+  dob: AWSDate
+  activeFrom: AWSDate
+  activeTo: AWSDate
+  profilePic: String
+}
